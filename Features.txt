@@ -1,0 +1,54 @@
+STOP WORDS"
+
+Stop words are a set of commonly used words in a language. Examples of stop words in English are “a”, “the”, “is”, “are” and etc. 
+Stop words are commonly used in Text Mining and Natural Language Processing (NLP) to eliminate words that are so commonly used that they carry very 
+little useful information.
+
+POLARITY:
+
+Polar words and phrases are usually associated with strong or clearly defined sentiment, 
+while non-polar refers to words and phrases typically used in everyday, mundane language.
+
+Range: -1 to +1
+-1: Negative
++1: Positive
+
+
+SUBJECTIVITY
+
+Anything objective sticks to the facts, but anything subjective has feelings. Objective and subjective are opposites. Objective: It is raining. 
+Subjective: I love the rain! Objective is a busy word and that's a fact.
+
+Subjectivity refers to how someone's judgment is shaped by personal opinions and feelings instead of outside influences.
+Since a subject is a person, subjectivity refers to how a person's own uniqueness influences their perceptions.
+
+Range: 0 to 1
+
+Absolute truth is that which is objective and corresponds to reality. It is invisible and unchanging following the lines of logical consistency 
+(i.e., the law of identity, the law of non contradiction, and the law of the excluded middle).
+
+
+LDA:
+
+Latent Dirichlet Allocation (LDA) is an example of topic model and is used to classify text in a document to a particular topic. 
+It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.
+
+Data Preprocessing in LDA:
+We will perform the following steps:
+1.Tokenization: Split the text into sentences and the sentences into words. Lowercase the words and remove punctuation.
+Words that have fewer than 3 characters are removed.
+2.All stopwords are removed.
+3.Words are lemmatized — words in third person are changed to first person and verbs in past and future tenses are changed into present.
+4.Words are stemmed — words are reduced to their root form.
+    Stemming is a technique used to extract the base form of the words by removing affixes from them.
+    For example, the stem of the words eating, eats, eaten is eat.
+
+A tool and technique for Topic Modeling, Latent Dirichlet Allocation (LDA) classifies or categorizes the text into a document and 
+the words per topic, these are modeled based on the Dirichlet distributions and processes.
+
+The LDA makes two key assumptions:
+1. Documents are a mixture of topics, and
+2. Topics are a mixture of tokens (or words)
+And, these topics using the probability distribution generate the words. In statistical language, the documents are known as the probability density 
+(or distribution) of topics and the topics are the probability density (or distribution) of words.
+
